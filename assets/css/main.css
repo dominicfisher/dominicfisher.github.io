@@ -24,6 +24,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+	
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -88,7 +89,7 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #fff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -112,13 +113,16 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #fff;
 		line-height: 1.5em;
+		font-size: 20px;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
 		text-decoration: none;
+		font-family: "PlayfairDisplay-Regular";
+		font-size: 50px;
 	}
 
 		h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
@@ -126,7 +130,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2em;
+		font-size: 70px;
 		letter-spacing: -1px;
 	}
 
@@ -193,11 +197,11 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-top: solid 1px #999DA0;
+		border-top: solid 1px #fff;
 	}
 
 	blockquote {
-		border-left: solid 0.5em #999DA0;
+		border-left: solid 0.5em #fff;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
@@ -213,9 +217,9 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
+		margin: 2em 0 0 0;
 		max-width: 100%;
-		width: 1400px;
+		border-radius: 50%;
 	}
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -344,7 +348,7 @@ input, select, textarea {
 		}
 
 		.row > .col-6 {
-			width: 50%;
+			width: 35%;
 		}
 
 		.row > .off-6 {
@@ -368,7 +372,7 @@ input, select, textarea {
 		}
 
 		.row > .col-9 {
-			width: 75%;
+			width: 65%;
 		}
 
 		.row > .off-9 {
@@ -392,11 +396,12 @@ input, select, textarea {
 		}
 
 		.row > .col-12 {
-			width: 100%;
+			width: 70%;
+			margin: 2 0 0 0;
+			
 		}
 
 		.row > .off-12 {
-			margin-left: 100%;
 		}
 
 		.row.gtr-0 {
@@ -1770,10 +1775,10 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
+		.circular--square { 
+			border-radius: 50%;
+			
+			width: 30%;
 		}
 
 		.image.left {
@@ -1912,7 +1917,7 @@ input, select, textarea {
 	}
 
 		table tbody tr:nth-child(2n+2) {
-			background: #999DA0;
+			background: #fff;
 		}
 
 		table td {
@@ -1922,7 +1927,7 @@ input, select, textarea {
 		table th {
 			text-align: left;
 			padding: 0.5em 1em 0.5em 1em;
-			color: #fff;
+			color: #999DA0;
 			background: #222729 url("images/overlay.png");
 		}
 
@@ -1932,7 +1937,7 @@ input, select, textarea {
 		}
 
 		table tfoot {
-			background: #eee;
+			background: #fff;
 		}
 
 /* Button */
@@ -2113,7 +2118,7 @@ input, select, textarea {
 			position: relative;
 			display: block;
 			font-size: 0.6em;
-			color: rgba(255, 255, 255, 0.5);
+			color: #fff;
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
 		}
@@ -2137,7 +2142,7 @@ input, select, textarea {
 			#nav ul li a {
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: rgba(255, 255, 255, 0.5);
+				color: #fff;
 				text-decoration: none;
 				outline: 0;
 				border: 0;
@@ -2156,7 +2161,7 @@ input, select, textarea {
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #41484c;
+						color: #fff;
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
@@ -2238,29 +2243,41 @@ input, select, textarea {
 
 					#main > section.dark a:hover {
 						border-bottom-color: rgba(255, 255, 255, 0);
+						color: #fff;
 					}
 
 			#main > section.cover {
 				padding: 10em 0;
 				background-size: cover;
 				background-position: center center;
+				color: #fff;
 			}
 
 			#main > section.one {
-				background-color: #81918E;
+				background-color: #fff;
 				background-image: url("../../images/banner.jpg");
+				color: #fff;
+				font-family: "PlayfairDisplay-Regular";
 			}
 
 			#main > section.two {
-				background-color: #D9DDDC;
+				background-color: #3b3b3b;
+				color: #fff;
+				font-family: "PlayfairDisplay-Regular";
+				font-size: 500px;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #3b3b3b;
+				color: #fff;
+				font-family: "PlayfairDisplay-Regular";
+				font-size: 20px;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #3b3b3b;
+				color: #fff;
+				font-family: "PlayfairDisplay-Regular";
 			}
 
 /* Wide */
@@ -2316,7 +2333,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 100px;
 			}
 
 			.container {
@@ -2502,7 +2519,7 @@ input, select, textarea {
 						text-rendering: auto;
 						line-height: 1;
 						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
+						font-family: 'PlayfairDisplay-Regular';
 						font-weight: 900;
 					}
 
@@ -2586,7 +2603,7 @@ input, select, textarea {
 			}
 
 			h2 {
-				font-size: 1.5em;
+				font-size: 20px;
 				letter-spacing: 0;
 				font-weight: 300;
 			}
