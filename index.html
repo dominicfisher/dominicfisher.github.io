@@ -33,30 +33,31 @@
 								<li><a href="Portfolio.html" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
+					
 						</nav>
-						<h2>Currently Listening 🔊</h2>
-						<iframe
-						  frameborder="0"
-						  height="380"
-						  id="github-iframe"
-						  src=""
-						  width="100%"
-						></iframe>
-						<script>
-						  fetch(
-							"https://api.github.com/repos/dominicfisher/dominicfisher.github.io/contents/player.min.html"
-						  )
-							.then(function (response) {
-							  return response.json();
-							})
-							.then(function (data) {
-							  var iframe = document.getElementById("github-iframe");
-							  iframe.src =
-								"data:text/html;charset=utf-8;base64," +
-								encodeURIComponent(data["content"]);
-							});
-						</script>
+						
 				</div>
+				<iframe
+				frameborder="1"
+				height="200"
+				id="github-iframe"
+				src=""
+				width="100%"
+			  ></iframe>
+			  <script>
+				fetch(
+				  "https://api.github.com/repos/dominicfisher/dominicfisher.github.io/contents/player.min.html"
+				)
+				  .then(function (response) {
+					return response.json();
+				  })
+				  .then(function (data) {
+					var iframe = document.getElementById("github-iframe");
+					iframe.src =
+					  "data:text/html;charset=utf-8;base64," +
+					  encodeURIComponent(data["content"]);
+				  });
+			  	</script>
 
 				<div class="bottom">
 
