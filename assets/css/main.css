@@ -23,7 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -212,6 +212,40 @@ input, select, textarea {
 	br.clear {
 		clear: both;
 	}
+
+	.hidden {
+		opacity: 0;
+		transition: all 1s;
+		font-family:"PlayfairDisplay-Regular";
+		filter: blur(5px);
+		transform: translateX(-100%);
+		display:inline;
+	
+	}
+
+	.show {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0);
+	}
+
+	
+	header {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		display: grid;
+		align-items: center;
+		padding-left:40px;
+		color: white;
+		font-size: 2em;
+		font-family: "PlayfairDisplay-Regular";
+	  }
+
+
+
+
+
+
 
 /* Container */
 
@@ -2208,6 +2242,10 @@ input, select, textarea {
 
 /* Main */
 
+
+
+
+
 	#main {
 		margin-left: 375px;
 	}
@@ -2591,6 +2629,8 @@ input, select, textarea {
 	.circular--square {
 		border-radius: 50%;
 		width: 30%;
+		float: right;
+		float: top;
 	}
 
 /* Mobile */
@@ -2607,6 +2647,7 @@ input, select, textarea {
 				font-size: 1.5em;
 				letter-spacing: 0;
 				font-weight: 300;
+				
 			}
 
 			.container {
@@ -2649,3 +2690,9 @@ input, select, textarea {
 				}
 
 	}
+
+
+
+
+		
+	
