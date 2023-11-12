@@ -392,6 +392,7 @@ h1 {
 }
 
 #contactForm {
+	display: none;
 	border-radius: 5%;
 	border: 6px solid #000;
 	width: 850px;
