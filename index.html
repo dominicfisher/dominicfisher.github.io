@@ -11,12 +11,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" /> 
 		<script defer src="app.js"></script>
+		<script type='text/javascript' src='jquery.particleground.js'></script>
+		<script type='text/javascript' src='demo.js'></script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<div id="header">
-
 				<div class="top">
 
 					<!-- Logo -->
@@ -33,31 +34,11 @@
 								<li><a href="Portfolio.html" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
 								<li><a ><span class="icon solid fa-envelope" id="contact">Contact</a></li>
 							</ul>
-					
 						</nav>
 						
 				</div>
-				<iframe
-				frameborder="0"
-				height="200"
-				id="github-iframe"
-				src=""
-				width="100%"
-			  ></iframe>
-			  <script>
-				fetch(
-				  "https://api.github.com/repos/dominicfisher/dominicfisher.github.io/contents/player.min.html"
-				)
-				  .then(function (response) {
-					return response.json();
-				  })
-				  .then(function (data) {
-					var iframe = document.getElementById("github-iframe");
-					iframe.src =
-					  "data:text/html;charset=utf-8;base64," +
-					  encodeURIComponent(data["content"]);
-				  });
-			  	</script>
+				<iframe frameborder="0" height="200" id="github-iframe" src="" width="100%"></iframe>
+	
 
 				<div class="bottom">
 
@@ -68,22 +49,17 @@
 							<li><a href="https://github.com/dominicfisher" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
 							<li><a href="mailto:dominic.fisher@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-
 				</div>
-
 			</div>
 
 		<!-- Main -->
 			<div id="main">
 
-				
-
 				<!-- About Me -->
-					<section id="about" class="three">
-						<div>
-							
+					<section id="particles" class="three">
+				<canvas class="pg-canvas"  height="200"></canvas>
 							<div class="hidden" >
-								<header align='left' class="shit">About Me</header>
+								<header>About Me</header>
 								<img class="circular--square" src="images/avatar.jpg" alt="Avatar"/>
 							</div>
 						<div class="hidden">Hello, my name is Dominic Fisher, Im 25 years old and based out of the United States, currently residening in the Kansas area.
@@ -91,16 +67,6 @@
 								of getting my UX Google certificate.</div>
 						</div>
 						</section>
-					</section>
-					<section id="contact" class="three">
-						<div class="container">
-						<div class="logos">
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-					</div>
-					</section>
 				<!-- Contact -->
 
 				<div id="contactForm">
@@ -119,15 +85,9 @@
 					<li><a href="https://www.facebook.com/dominic.fisher.54" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="mailto:dominic.fisher@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
-				
-
-				
-					
-				  </div>
-				 
-				</div>
-				
-				</form>
+		 </div>
+	</div>				
+</form>
 
 
 		<!-- Scripts -->
@@ -138,6 +98,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				fetch(
+				  "https://api.github.com/repos/dominicfisher/dominicfisher.github.io/contents/player.min.html"
+				)
+				  .then(function (response) {
+					return response.json();
+				  })
+				  .then(function (data) {
+					var iframe = document.getElementById("github-iframe");
+					iframe.src =
+					  "data:text/html;charset=utf-8;base64," +
+					  encodeURIComponent(data["content"]);
+				  });
+			  	</script>
 
 	</body>
 </html>
