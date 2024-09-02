@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "D:/Fivem Code/fivem-dev-server"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dominicfisher.github.io"
+	}
+}
