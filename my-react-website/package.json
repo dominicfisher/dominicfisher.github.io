@@ -1,7 +1,7 @@
 {
+  "homepage": "http://dominicfisher.github.io/dominicfisher.github.io",
   "name": "my-react-website",
   "version": "0.1.0",
-  "homepage": "http://dominicfisher.github.io/dominicfisher.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
