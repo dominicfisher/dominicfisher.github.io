@@ -1,0 +1,86 @@
+#player {
+    background-color: #111;
+    color: #fff;
+    font-family: Helvetica, Arial;
+    font-size: 10px; /* Reduced font size */
+    border-radius: 10px;
+    filter: opacity(.8);
+    width: 250px;
+    height: auto; /* Adjust height to fit content */
+    position: relative;
+    padding: 1em; /* Added padding for better spacing */
+    margin-top: 5em; /* Added margin for better spacing */
+}
+
+.row {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+}
+
+.albumArtContainer {
+    width: 20%;
+    text-align: center;
+}
+
+.albumArt {
+    margin: 0.5em; /* Reduced margin */
+    max-height: 8vmin; /* Reduced max height */
+    border-radius: 10px;
+}
+
+.infoContainer {
+    width: 80%;
+    margin: 0.5em; /* Reduced margin */
+    padding-left: 4em; /* Added padding to move content to the right */
+}
+
+.songTitle {
+    font-size: clamp(1em, 2.5vw, 1.5em); /* Auto-adjust font size */
+    margin-left: 0.5em; /* Added margin to move content to the right */
+}
+
+.artistName {
+    font-size: clamp(0.8em, 2vw, 1em); /* Auto-adjust font size */
+    margin-bottom: 0.5em; /* Reduced margin */
+    margin-left: 2.5em; /* Added margin to move content to the right */
+}
+
+.status {
+    margin: 1em 0 0 0; /* Reduced margin */
+    font-size: 0.8em; /* Reduced font size */
+}
+
+.time {
+    position: relative;
+    float: right;
+    padding-top: 10px;
+}
+
+.progressBack {
+    border: 0.1em solid #eee; /* Reduced border size */
+    height: 0.5em; /* Reduced height */
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.progress {
+    background-color: #eee;
+    border: 0.1em solid transparent;
+    height: 0.5em; /* Reduced height */
+    border-radius: 10px;
+    transition: width 0.2s;
+    opacity: 0.5;
+}
+
+.background {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -10;
+    background-position: center center;
+    background-size: cover; /* Adjusted background size */
+    filter: blur(1em); /* Reduced blur */
+    position: absolute;
+    transition: background-image 0.5s ease-in;
+}

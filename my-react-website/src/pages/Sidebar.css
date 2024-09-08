@@ -1,104 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+}
 .sidebar {
-  width: 250px;
-  background-color: #2b2e42; /* Uniform background color for sidebar */
+  width: 275px;
+  background-color: #2b2e42;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
   padding-left: 10px;
-  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3); /* Depth shadow */
+  position: fixed;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 1000; /* Ensures sidebar is above other content */
+  transform: translateX(0); /* Initially open */
 }
-
-/* Logo at the top */
+.sidebar.closed {
+  transform: translateX(-100%); /* Closed state */
+}
+.open-btn, .close-btn {
+  display: block;
+  position: fixed;
+  top: 20px;
+  background-color: #444;
+  color: #ffffff;
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 5px;
+  z-index: 1001; /* Ensure buttons are above the sidebar */
+}
+.open-btn {
+  left: 10px;
+}
+.close-btn {
+  left: 290px; /* Position it outside the sidebar */
+}
 #logo {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
-/* Sidebar button base styles */
 .sidebar-button, .Slink, .dropdown-item {
   display: block;
   padding: 12px 20px;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
-  border-radius: 8px; /* Rounded corners */
-  background-color: #272a3b; /* Same color as the sidebar */
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Inset shadow for embedded effect */
-  width: 90%; /* Width based on parent */
-  margin: 10px auto; /* Centers the button and adds spacing */
-  transition: background-color 0.3s ease, color 0.3s ease, padding-left 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  background-color: #272a3b;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: 10px auto;
 }
-
-/* Hover effect */
-.sidebar-button:hover, .Slink:hover, .dropdown-item:hover {
-  background-color: #3f4c77; /* Slightly darker background on hover */
-  color: #ffffff;
-  padding-left: 25px; /* Indent on hover */
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7), 2px 2px 10px rgba(0, 0, 0, 0.3); /* Enhanced inset shadow on hover */
-}
-
-/* Active button style */
-.sidebar-button.active {
-  background-color: #3f4c77; /* Active state background color */
-  color: #ffffff;
-  padding-left: 25px; /* Indent for active button */
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7), 2px 2px 10px rgba(0, 0, 0, 0.3); /* Same shadow as hover */
-}
-
-/* Dropdown container */
 .dropdown-container {
   display: none;
-  background-color: #2a2d3e; /* Matches sidebar color */
-  padding-left: 10px;
 }
-
-/* Show dropdown when visible */
 .dropdown-container.show {
   display: block;
 }
 
-/* Dropdown item styles */
-.dropdown-item {
-  padding: 8px 15px;
-  color: #ffffff;
-  background-color: #2a2d3e; /* Matches sidebar color */
-  border-radius: 8px;
-  margin-bottom: 5px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Inset shadow for embedded effect */
-}
-
-.dropdown-item:hover {
-  background-color: #3f4c77; /* Hover background for dropdown items */
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7), 2px 2px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-}
-
-/* Divider line */
-hr {
-  border: none;
-  border-top: 1px solid #3a3e58;
-  width: 90%;
-  margin: 15px auto;
-}
-
-/* Sidebar footer links */
 .icons2 {
   margin-top: auto; /* Pushes footer icons to the bottom */
   padding-left: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
+}
+
+.icons2 li {
+  margin: 0 10px; /* Add horizontal space between items */
 }
 
 .icons2 li a {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
 }
 
 .icons2 li a:hover {
-  color: #4a567d;
+  opacity: 0.7;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjust width for smaller screens */
+  }
+  .close-btn {
+    left: 220px; /* Adjust position for smaller screens */
+  }
+  .sidebar.closed {
+    transform: translateX(-100%); /* Ensure sidebar is fully hidden */
+  }
+  .open-btn {
+    left: 20px; /* Ensure open button is visible */
+  }
 }
