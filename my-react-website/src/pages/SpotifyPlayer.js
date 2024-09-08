@@ -65,10 +65,10 @@ const SpotifyPlayer = () => {
                     </div>
                     {songData && songData.item && (
                         <>
-                            <a id="player-song-link" href={songData.item.external_urls.spotify} target="_blank" rel="noopener noreferrer"></a>
-                            <a id="player-artist-link" href={songData.item.artists[0].external_urls.spotify} target="_blank" rel="noopener noreferrer" ></a>
-                            <a id="player-album-link" href={songData.item.album.external_urls.spotify} target="_blank" rel="noopener noreferrer" ></a>
-                            {songData.item.preview_url && <a id="player-mp3-link" href={songData.item.preview_url} target="_blank" rel="noopener noreferrer" ></a>}
+                            <a id="player-song-link" href={songData.item.external_urls.spotify} target="_blank" rel="noreferrer"></a>
+                            <a id="player-artist-link" href={songData.item.artists[0].external_urls.spotify} target="_blank" rel="noreferrer" ></a>
+                            <a id="player-album-link" href={songData.item.album.external_urls.spotify} target="_blank" rel="noreferrer" ></a>
+                            {songData.item.preview_url && <a id="player-mp3-link" href={songData.item.preview_url} target="_blank" rel="noreferrer" ></a>}
                         </>
                     )}
                     <div id="player-status" className="status">
