@@ -2,7 +2,7 @@
   "name": "my-react-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dominicfisher.github.io/dominicfisher.github.io",
+  "homepage": "https://dominicfisher.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -34,11 +34,6 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   },
   "devDependencies": {
