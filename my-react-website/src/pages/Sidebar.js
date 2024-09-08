@@ -5,7 +5,6 @@ import SpotifyPlayer from './SpotifyPlayer';
 
 const Sidebar = () => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
-    const [profileDropdownVisible, setProfileDropdownVisible] = useState(false);
     const [ticketsDropdownVisible, setTicketsDropdownVisible] = useState(false);
     const [grindersDropdownVisible, setGrindersDropdownVisible] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(true);  // Sidebar is open by default
@@ -14,9 +13,7 @@ const Sidebar = () => {
         setDropdownVisible(!dropdownVisible);
     };
 
-    const handleProfileDropdownToggle = () => {
-        setProfileDropdownVisible(!profileDropdownVisible);
-    };
+ 
 
     const handleTicketsDropdownToggle = () => {
         setTicketsDropdownVisible(!ticketsDropdownVisible);
