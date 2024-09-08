@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dominicfisher.github.io/static/css/main.0f101f45.css",
+    "main.js": "/dominicfisher.github.io/static/js/main.fcfca2c9.js",
+    "static/js/453.89f587e0.chunk.js": "/dominicfisher.github.io/static/js/453.89f587e0.chunk.js",
+    "index.html": "/dominicfisher.github.io/index.html",
+    "main.0f101f45.css.map": "/dominicfisher.github.io/static/css/main.0f101f45.css.map",
+    "main.fcfca2c9.js.map": "/dominicfisher.github.io/static/js/main.fcfca2c9.js.map",
+    "453.89f587e0.chunk.js.map": "/dominicfisher.github.io/static/js/453.89f587e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f101f45.css",
+    "static/js/main.fcfca2c9.js"
+  ]
+}
