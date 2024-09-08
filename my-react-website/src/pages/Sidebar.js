@@ -44,7 +44,7 @@ const Sidebar = () => {
 
     return (
         <>
-            {!sidebarOpen && <button className="open-btn" onClick={() => setSidebarOpen(true)}>Open Sidebar</button>}
+            {!sidebarOpen && <button className="open-btn" onClick={() => setSidebarOpen(true)}><i className='bx bx-menu' ></i></button>}
             <aside className={`sidebar ${sidebarOpen ? '' : 'closed'}`}>
                 <nav className="nav-links">
                     <div id="logo">
