@@ -98,10 +98,10 @@ const Sidebar = () => {
                 <ul className="icons2">
                     <li><a href="https://twitter.com/fisher_dominic" target="_blank" className="icon brands fa-twitter"><span className="label"><i class='bx bxl-twitter' ></i></span></a></li>
                     <li><a href="https://www.facebook.com/dominic.fisher.54" target="_blank" className="icon brands fa-facebook-f"><span className="label"><i class='bx bxl-facebook' ></i></span></a></li>
-                    <li><a href="mailto:dominic.fisher@hotmail.com" className="icon solid fa-envelope"><span className="label"><i class='bx bx-envelope' ></i></span></a></li>
+                    <li><a href="mailto:dominic.fisher@hotmail.com" className="icon solid fa-envelope"><span className="label"><i classNames='bx bx-envelope' ></i></span></a></li>
                 </ul>
             </aside>
-            {sidebarOpen && <button className="close-btn" onClick={() => setSidebarOpen(false)}><i class='bx bx-menu' ></i></button>}
+            {sidebarOpen && <button className="close-btn" onClick={() => setSidebarOpen(false)}><i className='bx bx-menu' ></i></button>}
         </>
     );
 };
