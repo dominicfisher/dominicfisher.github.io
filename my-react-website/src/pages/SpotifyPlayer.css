@@ -5,11 +5,12 @@
     font-size: 10px; /* Reduced font size */
     border-radius: 10px;
     filter: opacity(.8);
-    width: 250px;
+    width: auto;
     height: auto; /* Adjust height to fit content */
     position: relative;
     padding: 1em; /* Added padding for better spacing */
-    margin-top: 5em; /* Added margin for better spacing */
+    margin-top: 5em;
+    margin-right: 1em; /* Added margin for better spacing */
 }
 
 .row {
@@ -29,7 +30,7 @@
 }
 
 .infoContainer {
-    width: 80%;
+    width: auto;
     margin: 0.5em; /* Reduced margin */
     padding-left: 4em; /* Added padding to move content to the right */
 }
